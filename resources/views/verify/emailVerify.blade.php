@@ -48,7 +48,7 @@
                     @csrf
                     <p><input type="text" name="code" id="code" placeholder="XXX-XXX-XXX"
                             value="{{ old('code') }}" required></p>
-                    @error('email')
+                    @error('code')
                         <p style="color: red">{{ $message }}</p>
                     @enderror
                     <p><a href="{{ route('verify.email') }}">resend code</a></p>

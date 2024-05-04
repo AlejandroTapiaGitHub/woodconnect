@@ -17,7 +17,8 @@
             @endif
 
             <div class="main-form">
-                <img src="{{ asset('assets/img/woodconnectPixelArt.jpeg') }}" alt="Logotipo de la aplicación Woodconnect" id="logotipoApp">
+                <img src="{{ asset('assets/img/woodconnectPixelArt.jpeg') }}" alt="Logotipo de la aplicación Woodconnect"
+                    id="logotipoApp">
                 <form action="{{ route('auth.singIn') }}" method="POST">
                     @csrf
                     <p><input type="email" name="email" placeholder="Email" value="{{ old('email') }}" required></p>
